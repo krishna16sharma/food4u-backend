@@ -11,13 +11,12 @@ const db = knex({
   client: 'pg',
   connection: {
     host : '127.0.0.1',
-    user : 'postgres',
-    password : 'test',
+    user : '',  //Username Here
+    password : '',  //Password Here
     database : 'food4u'
   }
 });
 
-//db.select('*').from('customers').then(data=>{console.log(data)});
 const app = express();
 
 app.use(bodyParser.json());
